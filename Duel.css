@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D9D9D9;
+}
+
+.header {
+    background-color: #00b2ff;
+    color: #FFFFFF;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    width: 40px;
+    height: auto;
+}
+
+.compte {
+    font-size: 18px;
+}
+
+.contenu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.intro {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 590px;
+    border-right: 1.5px solid black;
+}
+
+.texte {
+    width: 150px;
+    height: 100%;
+    text-align: center;
+}
+
+.duel-img{
+    width: 150px;
+    height: 150px;
+}
+
+.duel-gras {
+    text-align: center;
+}
+
+.menu {
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 590px;
+    border-left: 1.5px solid black;
+    
+}
+
+.difficultés {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nb-questions {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.participants{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+facile,
+.moyen,
+.difficile,
+.nb10,
+.nb20,
+.nb30 {
+    background-color: #00b2ff;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 75px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Quand le bouton est sélectionné, on cible l'input + label */
+#facile:checked + label.facile {
+    background-color: #005f99;
+    color: white;
+}
+
+#moyen:checked + label.moyen {
+    background-color: #1580c4;
+    color: white;
+}
+
+#difficile:checked + label.difficile {
+    background-color: #1580c4;
+    color: white;
+}
+
+#nb10:checked + label.nb10 {
+    background-color: #1580c4;
+    color: white;
+}
+
+#nb20:checked + label.nb20 {
+    background-color: #1580c4;
+    color: white;
+}
+
+#nb30:checked + label.nb30 {
+    background-color: #1d2a31;
+    color: white;
+}

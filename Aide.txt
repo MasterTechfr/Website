@@ -1,0 +1,58 @@
+Structure html = 
+Doctype
+    html
+        head
+            title
+        /head
+        body
+            "Contenu de la page"
+        /body
+    /html
+
+
+
+Commandes html:
+title : titre de l'onglet
+h1 : sous titre 1
+h2 : sous titre 2
+ul : liste avec des points
+    li : elements de la liste
+p : paragraphe
+a href : mettre un lien ((interne ou externe) mettre # pour faire reference a une ancre) 
+id : sert a mettre une ancre dans le texte
+img sert a inserer une image
+    src pour mettre le chemin d'acces de l'image
+    alt pour le texte alternatif de l'image
+    title affichage quand on survole l'image
+class permet d'identifier une partie du code afin de la modifer avec du css
+table : sert a inserer un tableau
+
+
+Commandes css
+
+."le nom de la class" permet de modifier les proprietes graphiques de cette derniere
+color : permet de définir la couleur de la police
+taille de police em :  permet de s'adapter a n'importe quel taille d'écran
+font-size : permet de modifier la taille de la police
+font-weight : permet de mettre en gras la police
+text-align : permet de modifier l'alignement de la police
+font-familly : permet de mettre le nom de la police appliquée
+rgb : pemret de definir une couleur
+rgba : pemret de definir une couleur et une opacité
+background-color : permet de definir la couleur du fond ( a mettre dans body)
+border : permet de mettre une bordure
+    taille
+    bordure en elle meme (pointillé, plein etc)
+    radius : permet d'arrondir la bordure
+    border-collapse : permet de coller les bordures
+
+Google font : permet de trouver des polices libres de droit
+color picker : permet de choisir une couleur
+fancy border radius : generateur de forme de bordure
+
+Images 
+Format d'image
+JPEG = Quasiment toutes les photos
+PNG = Tout ce qui n'est pas photo (illustrations, etc)
+GIF = Bah des gifs
+SVG = Logos, icones, dessins

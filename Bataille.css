@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #00b2ff;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.compte {
+    font-size: 18px;
+}
+
+.compte a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.container {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.section {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titre {
+    font-size: 28px;
+    color: #00b2ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contenu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.intro {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 590px;
+    border-right: 1.5px solid black;
+}
+
+.texte {
+    width: 150px;
+    height: 100%;
+    text-align: center;
+}
+
+.bataille-img{
+    width: 150px;
+    height: 150px;
+}
+
+.bataille-gras {
+    text-align: center;
+}
+
+.menu {
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 590px;
+    border-left: 1.5px solid black;
+    
+}
+
+.difficultés {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nb-questions {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.participants{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.facile,
+.moyen,
+.difficile,
+.nb10,
+.nb20,
+.nb30 {
+    background-color: #00b2ff;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 75px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Quand le bouton est sélectionné, on cible l'input + label */
+#facile:checked + label.facile {
+    background-color: #005f99;
+    color: white;
+}
+
+#moyen:checked + label.moyen {
+    background-color: #1580c4;
+    color: white;
+}
+
+#difficile:checked + label.difficile {
+    background-color: #1580c4;
+    color: white;
+}
+
+#nb10:checked + label.nb10 {
+    background-color: #1580c4;
+    color: white;
+}
+
+#nb20:checked + label.nb20 {
+    background-color: #1580c4;
+    color: white;
+}
+
+#nb30:checked + label.nb30 {
+    background-color: #1580c4;
+    color: white;
+}
